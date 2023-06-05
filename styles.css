@@ -26,7 +26,7 @@
 .navbar__logo{
     color: var(--white);
     text-decoration: none;
-    padding-left: 1rem;
+    
     font-size: 1.5rem;
 }
 
@@ -124,7 +124,7 @@
 
 /*hero section*/
 .hero{
-    background: url('./images/gymm1.jpg');
+    background: url('./images/in33.jpg');
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -207,7 +207,7 @@
     color: var(--red);
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -328,17 +328,12 @@
 
 /* team section */
 
-.team{
-    padding: 1.5rem;
-    
-}
-
 .team__wrapper{
     
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 .team__card{
@@ -684,6 +679,8 @@ body {
 	justify-content: center; 
 	margin: 0 auto; 
 	align-items: center;
+    
+    
  }
  .con_inf {
 	display: flex;
@@ -692,12 +689,120 @@ body {
  }
  .con_inf_col:first-child {
 	margin-left: 0px;
+  
  }
  .con_inf_col {
 	margin-left: 15px;
  }
-
- 
+.gym_content {
+	display: flex;
+	background-color: #fff;
+}
+/* Slideshow container */
+.slideshow-container {
+	display: block;
+  max-width: 700px;
   
+ 
+  position: relative;
+  margin: 50px;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.gym_content_img {
+    height: 550px;
+    width: 450px;
+}
+.gym_content_text {
+	font-size: 30px;
+	margin-right: 80px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.con_inf_col > p, .con_inf_col > a {
+	font-size: 25px;
+}
   
