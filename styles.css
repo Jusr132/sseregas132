@@ -200,8 +200,10 @@
     color: var(--red);
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 0.5 rem;
+		padding-top: 7px;
+    margin-bottom: 7px;
     left: 15rem;
+		font-size: 20px;
 }
 .topline2{
     color: var(--red);
@@ -260,9 +262,10 @@
 }
 
 .membership__desc{
-    margin-bottom: 3rem;
+		text-transform: uppercase;
+		color: var(--red);
     font-size: clamp(1rem, 3vw, 1.5rem);
-    padding: 1rem;
+    padding: 35px;
 }
 
 .membership__wrapper{
@@ -295,6 +298,9 @@
 
 .membership__card p {
     margin-bottom: 1rem;
+}
+.con_inf_col p {
+	margin-bottom: 10px;
 }
 
 .card-icon{
@@ -376,6 +382,9 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+		padding-bottom: 20px;
+		height: 599px;
+		width: 344px;
 }
 
 .team__text:nth-child(1) {
@@ -527,13 +536,6 @@ form{
 
 /* footer section */
 
-.footer{
-    padding: 5rem calc((100vw - 1100px) / 2);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    color: var(--white);
-    background: var(--black)
-}
 
 .footer__desc{
     padding: 0 2rem;
@@ -558,18 +560,21 @@ form{
 }
 
 .footer__wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+	padding: 5rem calc((100vw - 1100px) / 2);
+    display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: var(--white);
+    background: var(--black)
 }
 
 .footer__links{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 1rem 2rem;
 }
 .footer__title{
-    font-size: 14px;
+    font-size: 25px;
     margin-bottom: 16px;
 
 }
@@ -577,9 +582,18 @@ form{
 .footer__link {
     text-decoration: none;
     color: rgb(242, 242, 242);
-    font-size: 14px;
+    font-size: 30px;
     margin-bottom: 0.5rem;
     transition: 0.3s ease-in-out;
+}
+.footer__link:last-child {
+	margin-left: 10px;
+}
+
+
+.footer__link2{
+    font-size: 20px;
+    color: white;
 }
 .footer__link:hover{
     color: var(--red);
@@ -650,17 +664,21 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 45%;
+  width: 40%;
   border-radius: 10px;
+  color: white;
   }
 .column {
     display: flex;
   justify-content: space-between;
     margin-bottom: 16px;
     padding: 0 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #000;
   }
 .title {
-    color: black;
+    color: white;
   padding: 8px;
   font-size: 20px;
   }
@@ -701,9 +719,7 @@ body {
 /* Slideshow container */
 .slideshow-container {
 	display: block;
-  max-width: 700px;
-  
- 
+  max-width: 700px; 
   position: relative;
   margin: 50px;
 }
@@ -799,10 +815,38 @@ body {
 .gym_content_text {
 	font-size: 30px;
 	margin-right: 80px;
-    margin-top: 50px;
-    margin-left: 10px;
+    padding-top: 50px;
+    padding-left: 30px;
+		text-align: justify;
 }
 .con_inf_col > p, .con_inf_col > a {
 	font-size: 25px;
+    color: black;
 }
-  
+.sportpit_content {
+	display: flex;
+}
+.sportpit_img {
+ width: 400px;
+ height: 500px;
+}
+.sportpit_text{
+	font-size: 25px;
+	text-align: justify;
+	margin-right: 80px;
+    padding-top: 50px;
+    padding-left: 30px;
+
+}
+a[class="sportpit_btn"]:hover {
+	color: white;
+}
+
+a[class="next sportpit_btn"],a[class="prev sportpit_btn"] {
+    color: black;
+}
+a[class="next sportpit_btn"]:hover,a[class="prev sportpit_btn"]:hover {
+    color: white;
+}
+
+
